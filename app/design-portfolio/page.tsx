@@ -1,30 +1,17 @@
 import type { Metadata } from "next";
-import ProjectCard from "@/components/ProjectCard";
-import { getProjectsByTrack } from "@/content/projects";
+import HubShell from "@/components/HubShell";
 
 export const metadata: Metadata = {
-  title: "UI / UX / Marketing / Design",
-  description: "Product design, brand and marketing design work by Luis.",
+  title: "UI/UX, Marketing & Design Projects",
+  description: "Interface, brand and marketing design projects by Luis Madrid.",
 };
 
 export default function DesignPortfolio() {
-  const items = getProjectsByTrack("design");
-
   return (
-    <div className="space-y-10">
-      <header className="max-w-2xl space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">
-          UI / UX / Marketing / Design
-        </h1>
-        <p className="opacity-70">
-          Intro copy for this hub — who it is for and what they will find.
-        </p>
-      </header>
-      <div className="grid gap-4 sm:grid-cols-2">
-        {items.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
-        ))}
-      </div>
-    </div>
+    <HubShell
+      track="design"
+      title="UI/UX, Marketing & Design Projects"
+      blurb="Product interfaces, brand identities and marketing design — from first paid commission to a brand I run day to day."
+    />
   );
 }

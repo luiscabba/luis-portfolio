@@ -2,20 +2,29 @@ import Link from "next/link";
 
 export default function SiteHeader() {
   return (
-    <header className="border-b border-black/10 dark:border-white/10">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 text-sm">
-        <Link href="/" className="font-semibold tracking-tight">
-          Luis
+    <header className="border-b border-hairline">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-5">
+        <Link
+          href="/"
+          className="text-sm font-semibold tracking-tight transition-opacity hover:opacity-70"
+        >
+          Luis Madrid
         </Link>
-        <div className="flex gap-6">
-          <Link href="/tech-portfolio" className="hover:underline underline-offset-4">
+        <nav aria-label="Portfolio hubs" className="flex gap-3 text-sm">
+          <Link
+            href="/tech-portfolio"
+            className="rounded-full border border-hairline px-4 py-1.5 transition-colors duration-200 hover:border-tech hover:text-tech"
+          >
             Tech &amp; Data
           </Link>
-          <Link href="/design-portfolio" className="hover:underline underline-offset-4">
+          <Link
+            href="/design-portfolio"
+            className="rounded-full border border-hairline px-4 py-1.5 transition-colors duration-200 hover:border-design hover:text-design"
+          >
             Design
           </Link>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 }

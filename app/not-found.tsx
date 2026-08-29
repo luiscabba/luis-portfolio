@@ -2,12 +2,26 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="space-y-4">
-      <h1 className="text-3xl font-semibold tracking-tight">Page not found</h1>
-      <p className="opacity-70">That project or page does not exist.</p>
-      <Link href="/" className="underline underline-offset-4">
-        Back home
-      </Link>
+    <div className="py-24 text-center">
+      <p className="text-sm font-semibold uppercase tracking-widest text-muted">404</p>
+      <h1 className="mt-4 text-heading font-semibold">Nothing here.</h1>
+      <p className="mt-4 text-body-lg text-muted">
+        That page doesn&apos;t exist — try one of the portfolios instead.
+      </p>
+      <div className="mt-10 flex justify-center gap-3">
+        <Link
+          href="/tech-portfolio"
+          className="rounded-full border border-hairline px-5 py-2 text-sm transition-colors hover:border-tech hover:text-tech"
+        >
+          Tech &amp; Data
+        </Link>
+        <Link
+          href="/design-portfolio"
+          className="rounded-full border border-hairline px-5 py-2 text-sm transition-colors hover:border-design hover:text-design"
+        >
+          Design
+        </Link>
+      </div>
     </div>
   );
 }
