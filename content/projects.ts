@@ -44,6 +44,12 @@ export type Project = {
   tagline: string;
   /** A project can live in one hub or both. */
   tracks: Track[];
+  /**
+   * Optional hub grouping. Projects sharing a category render together under a
+   * subheading, in the order the category first appears in `projects`. Leave
+   * unset across a track and that hub stays a single flat grid.
+   */
+  category?: string;
   year: string;
   role: string;
   tools: string[];
@@ -77,6 +83,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "beso-foods",
+    category: "Brand & Marketing",
     title: "Beso Foods",
     tagline:
       "A South American food stall I co-own: brand book, 3D-modelled stall, and the social feed that fills it.",
@@ -308,6 +315,7 @@ export const projects: Project[] = [
   },
   {
     slug: "okpo",
+    category: "Product & UI/UX",
     title: "OKPO",
     tagline:
       "Concept designs for a Filipino creator community platform and the financing app built alongside it.",
@@ -379,6 +387,7 @@ export const projects: Project[] = [
   },
   {
     slug: "daddydappy",
+    category: "Product & UI/UX",
     title: "DaddyDappy",
     tagline:
       "Branding, NFT characters, use-case UI and a shipped landing page for a Web3 community boardroom startup.",
@@ -469,6 +478,7 @@ export const projects: Project[] = [
   },
   {
     slug: "keptgreen",
+    category: "Product & UI/UX",
     title: "KeptGreen",
     tagline: "A conceptual sustainability travel app, commissioned by Texxen.",
     tracks: ["design"],

@@ -41,6 +41,15 @@ export default function HubShell({
   const projects = getProjectsByTrack(track);
   const t = TRACK[track];
 
+  const loose = projects.filter((p) => !p.category);
+  const groups = projects.reduce<[string, typeof projects][]>((acc, project) => {
+    if (!project.category) return acc;
+    const existing = acc.find(([category]) => category === project.category);
+    if (existing) existing[1].push(project);
+    else acc.push([project.category, [project]]);
+    return acc;
+  }, []);
+
   return (
     <div className="mx-auto max-w-[1280px] px-6 py-14 md:py-16">
       <nav aria-label="Breadcrumb" className="anim-rise">
@@ -87,13 +96,18 @@ export default function HubShell({
       </header>
 
       <section className="mt-14 border-t border-hairline pt-14">
-        {projects.length > 0 ? (
+        {projects.length === 0 && <p className="text-muted">Projects coming soon.</p>}
+
+        {/* Uncategorised projects lead, then one block per category in the
+            order the category first appears in the content file. */}
+        {loose.length > 0 && (
           <div className="grid gap-5 sm:grid-cols-2">
-            {projects.map((project, i) => (
+            {loose.map((project, i) => (
               <ProjectCard key={project.slug} project={project} index={i + 3} />
             ))}
-            {projects.length < 3 &&
-              Array.from({ length: 3 - projects.length }).map((_, i) => (
+            {groups.length === 0 &&
+              loose.length < 3 &&
+              Array.from({ length: 3 - loose.length }).map((_, i) => (
                 <div
                   key={`ghost-${i}`}
                   className="flex aspect-[4/3] items-center justify-center rounded-card border border-dashed border-hairline bg-surface text-sm text-muted"
@@ -102,9 +116,26 @@ export default function HubShell({
                 </div>
               ))}
           </div>
-        ) : (
-          <p className="text-muted">Projects coming soon.</p>
         )}
+
+        {groups.map(([category, items], g) => (
+          <div key={category} className={g > 0 || loose.length > 0 ? "mt-14" : ""}>
+            <div className="flex items-baseline gap-4">
+              <h2 className={`text-xs font-semibold uppercase tracking-[0.14em] ${t.text}`}>
+                {category}
+              </h2>
+              <span aria-hidden className="h-px flex-1 bg-hairline" />
+              <span className="text-xs text-muted">
+                {items.length} {items.length === 1 ? "project" : "projects"}
+              </span>
+            </div>
+            <div className="mt-6 grid gap-5 sm:grid-cols-2">
+              {items.map((project, i) => (
+                <ProjectCard key={project.slug} project={project} index={i + 3} />
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
 
       <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-hairline pt-8">
