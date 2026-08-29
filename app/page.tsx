@@ -62,7 +62,7 @@ export default function Home() {
               Analyses, dashboards, models and AI workflows — and the thinking
               behind them.
             </p>
-            <span className="mt-8 inline-flex items-center gap-2 rounded-full border border-hairline px-5 py-2 text-sm transition-colors duration-300 group-hover:border-tech group-hover:text-tech">
+            <span className="mt-8 inline-flex items-center gap-2 rounded-full border border-hairline px-5 py-2 text-sm transition-colors duration-300 group-hover:border-tech group-hover:bg-tech group-hover:text-canvas">
               View projects
               <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
                 →
@@ -81,7 +81,7 @@ export default function Home() {
               Product interfaces, brand identities and marketing design —
               shipped, not just mocked up.
             </p>
-            <span className="mt-8 inline-flex items-center gap-2 rounded-full border border-hairline px-5 py-2 text-sm transition-colors duration-300 group-hover:border-design group-hover:text-design">
+            <span className="mt-8 inline-flex items-center gap-2 rounded-full border border-hairline px-5 py-2 text-sm transition-colors duration-300 group-hover:border-design group-hover:bg-design group-hover:text-canvas">
               View projects
               <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
                 →

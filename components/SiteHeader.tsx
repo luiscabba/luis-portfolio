@@ -13,13 +13,13 @@ export default function SiteHeader() {
         <nav aria-label="Portfolio hubs" className="flex gap-3 text-sm">
           <Link
             href="/tech-portfolio"
-            className="rounded-full border border-hairline px-4 py-1.5 transition-colors duration-200 hover:border-tech hover:text-tech"
+            className="rounded-full border border-hairline px-4 py-1.5 transition-colors duration-200 hover:border-tech hover:bg-tech hover:text-canvas"
           >
             Tech &amp; Data
           </Link>
           <Link
             href="/design-portfolio"
-            className="rounded-full border border-hairline px-4 py-1.5 transition-colors duration-200 hover:border-design hover:text-design"
+            className="rounded-full border border-hairline px-4 py-1.5 transition-colors duration-200 hover:border-design hover:bg-design hover:text-canvas"
           >
             Design
           </Link>
