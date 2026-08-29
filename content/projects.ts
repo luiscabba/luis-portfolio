@@ -78,30 +78,92 @@ export const projects: Project[] = [
   {
     slug: "daddydappy",
     title: "DaddyDappy",
-    tagline: "A Web3 community boardroom app, designed and shipped end-to-end.",
+    tagline:
+      "Branding, NFT characters, use-case UI and a shipped landing page for a Web3 community boardroom startup.",
     tracks: ["design"],
-    year: "2024",
-    role: "UI Designer & Front-end Builder",
-    tools: ["Figma", "Low-code", "Web3"],
-    brand: { bg: "#14102a", fg: "#e9e2ff", accent: "#9d95ff" },
+    year: "2022",
+    role: "Product & UI/UX Designer",
+    tools: ["Figma", "Wix", "Canva"],
+    brand: { bg: "#101711", fg: "#EAF3EC", accent: "#4FC46E" },
+    cover: "/projects/daddydappy/laptop-mockup.jpg",
     summary:
-      "First paid commission — designed the UI and shipped the live front end for a Web3 community boardroom.",
+      "Product and UI/UX design for DaddyDappy, a crypto startup building Web3 boardrooms for token holders: brand direction, NFT character mockups, use-case UI, the whitepaper, and the live landing page.",
     context:
-      "DaddyDappy was my first paid commission: a boardroom-style app for a Web3 community that needed a real, usable interface rather than a whitepaper mockup. I designed the UI and built the live front end with low-code tools, and the product ran in production for around six months.",
+      "DaddyDappy set out to fix a gap the founders kept hitting in crypto communities: Discord, Telegram and Twitter are good at gathering a crowd but bad at proving who actually holds the token, so founders talk past bots and holders feel disconnected from the project. The answer was a token-gated \"boardroom\", part Reddit feed, part Discord channel list, with leaderboards, reward gifting and public listings that let communities compete for a top spot. I joined as the product and UI/UX designer, working across branding, the character work, the interface concepts and everything the project showed the public.",
     timeline: [
-      { phase: "Design & build", period: "2024", description: "UI design in Figma, front end assembled with low-code tools." },
-      { phase: "Live operation", period: "~6 months", description: "Product live with the community until the project was discontinued." },
+      {
+        phase: "Branding & ideation",
+        period: "Q1 2022",
+        description:
+          "Visual direction, the Daddy mascot, and shaping the boardroom concept with the founders.",
+      },
+      {
+        phase: "Feature & UI design",
+        period: "Q2 to Q3 2022",
+        description:
+          "Use-case UI for boardrooms, leaderboards, direct messaging and rewards.",
+      },
+      {
+        phase: "Launch collateral",
+        period: "Q3 to Q4 2022",
+        description:
+          "Whitepaper design and the public landing page shipped on Wix.",
+      },
     ],
     outputs: [
-      "Complete UI design for the boardroom app",
-      "Live, working front end",
+      "Brand direction: logo, green and yellow palette, and the Daddy mascot",
+      "NFT character mockups for the Tribute Collection, 18 hand-drawn pop-culture Daddies",
+      "Use-case UI concepts for boardrooms, leaderboards, direct messaging, rewards and social integrations",
+      "Landing page and rankings screen designs",
+      "The public landing page, built and shipped on Wix",
+      "The DaddyDappy whitepaper, cover to roadmap",
     ],
     responsibilities: [
-      "Designed every screen and interaction",
-      "Built and shipped the front end",
-      "Iterated with the client while live",
+      "Assisted in branding and product ideation with the founders",
+      "Ideated and mocked up the NFT characters",
+      "Designed the use-case UI that explained each boardroom feature",
+      "Solely responsible for building and shipping the landing page on Wix",
+      "Designed and produced the whitepaper",
     ],
-    skills: ["UI design", "Design systems", "Low-code development", "Web3 UX"],
+    skills: [
+      "Product design",
+      "UI/UX design",
+      "Brand identity",
+      "Illustration & character design",
+      "Web3 UX",
+      "Wix",
+      "Whitepaper design",
+    ],
+    media: [
+      {
+        src: "/projects/daddydappy/laptop-mockup.jpg",
+        alt: "DaddyDappy landing page on a laptop, green hero with the yellow Daddy mascot and a speech bubble.",
+        caption:
+          "The shipped landing page: \"Open and ready-to-use community boardroom dapp.\"",
+        group: "Landing page",
+      },
+      {
+        src: "/projects/daddydappy/landing-mockups.jpg",
+        alt: "Two DaddyDappy web designs, the landing page and a project rankings table.",
+        caption:
+          "Landing page and the public rankings screen, where boardrooms compete on rewards, activity and members.",
+        group: "Landing page",
+      },
+      {
+        src: "/projects/daddydappy/usecase-ui.jpg",
+        alt: "Board of DaddyDappy interface concepts covering leaderboards, rewards, direct messaging and social sharing.",
+        caption:
+          "Use-case UI iterations: boardrooms, leaderboards, community rewards, holder-only direct messaging and social integration.",
+        group: "Use-case UI",
+      },
+      {
+        src: "/projects/daddydappy/whitepaper.jpg",
+        alt: "DaddyDappy whitepaper pages in green, including the roadmap spread and the Tribute NFT card.",
+        caption:
+          "Whitepaper pages: cover, contents, the 2022 to 2023 roadmap, and the 18-piece Tribute NFT collection.",
+        group: "Whitepaper",
+      },
+    ],
   },
   {
     slug: "okpo",
