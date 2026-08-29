@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Mark from "@/components/Mark";
 
 export default function SiteHeader() {
   return (
@@ -6,8 +7,10 @@ export default function SiteHeader() {
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-5">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight transition-opacity hover:opacity-70"
+          aria-label="Luis Madrid, home"
+          className="flex items-center gap-2.5 text-sm font-semibold tracking-tight transition-opacity hover:opacity-70"
         >
+          <Mark className="h-6 w-6 shrink-0" />
           Luis Madrid
         </Link>
         <nav aria-label="Portfolio hubs" className="flex gap-3 text-sm">
