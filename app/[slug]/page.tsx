@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Reveal from "@/components/Reveal";
-import { allSlugs, getProject } from "@/content/projects";
+import { allSlugs, getProject, type MediaItem } from "@/content/projects";
 
 // Only slugs listed in content/projects.ts render. Anything else 404s,
 // so this catch-all can safely sit at the root next to the static hubs.
@@ -22,6 +22,21 @@ export async function generateMetadata({
   const project = getProject(slug);
   if (!project) return {};
   return { title: project.title, description: project.summary };
+}
+
+/**
+ * Bucket media into ordered groups. Items with no `group` fall into a single
+ * unlabelled bucket, so an ungrouped gallery renders exactly as it always has.
+ * Group order follows first appearance in the media array.
+ */
+function groupMedia(media: MediaItem[]) {
+  const buckets: { group?: string; items: MediaItem[] }[] = [];
+  for (const item of media) {
+    const existing = buckets.find((b) => b.group === item.group);
+    if (existing) existing.items.push(item);
+    else buckets.push({ group: item.group, items: [item] });
+  }
+  return buckets;
 }
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -202,28 +217,41 @@ export default async function ProjectPage({
       {project.media && project.media.length > 0 && (
         <section className="mt-12 border-t border-hairline pt-12">
           <SectionLabel>Resources &amp; Sample Outputs</SectionLabel>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2">
-            {project.media.map((item) => (
-              <Reveal key={item.src}>
-                <figure>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-card border border-hairline bg-surface">
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      fill
-                      sizes="(min-width: 640px) 50vw, 100vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  {item.caption && (
-                    <figcaption className="mt-2 text-sm text-muted">
-                      {item.caption}
-                    </figcaption>
-                  )}
-                </figure>
-              </Reveal>
-            ))}
-          </div>
+          {groupMedia(project.media).map(({ group, items }, groupIndex) => (
+            <div key={group ?? "__ungrouped"}>
+              {group && (
+                <h3
+                  className={`text-subheading font-medium ${groupIndex === 0 ? "mt-8" : "mt-14"}`}
+                >
+                  {group}
+                </h3>
+              )}
+              <div
+                className={`grid gap-5 sm:grid-cols-2 ${group ? "mt-5" : "mt-8"}`}
+              >
+                {items.map((item) => (
+                  <Reveal key={item.src}>
+                    <figure>
+                      <div className="relative aspect-[4/3] overflow-hidden rounded-card border border-hairline bg-surface">
+                        <Image
+                          src={item.src}
+                          alt={item.alt}
+                          fill
+                          sizes="(min-width: 640px) 50vw, 100vw"
+                          className="object-cover"
+                        />
+                      </div>
+                      {item.caption && (
+                        <figcaption className="mt-2 text-sm text-muted">
+                          {item.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          ))}
         </section>
       )}
 

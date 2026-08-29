@@ -19,6 +19,12 @@ export type MediaItem = {
   src: string;
   alt: string;
   caption?: string;
+  /**
+   * Optional gallery grouping. Items sharing a group render together under a
+   * subheading, in the order the group first appears in `media`. Leave unset
+   * and the gallery stays a single flat grid.
+   */
+  group?: string;
 };
 
 export type ProjectBrand = {
@@ -142,27 +148,170 @@ export const projects: Project[] = [
   {
     slug: "beso-foods",
     title: "Beso Foods",
-    tagline: "Brand identity and marketing for a food stall business I co-own.",
+    tagline:
+      "A South American food stall I co-own \u2014 brand book, 3D-modelled stall, and the social feed that fills it.",
     tracks: ["design"],
-    year: "2024–present",
-    role: "Co-owner, Brand & Marketing Designer",
-    tools: ["Branding", "Social media", "3D modelling"],
-    brand: { bg: "#2b1205", fg: "#ffe8d1", accent: "#ff8709" },
+    year: "2024 \u2013 Present",
+    role: "Co-owner, Head of Marketing & Design",
+    tools: ["Branding", "3D modelling", "Social media", "Art direction"],
+    brand: { bg: "#272829", fg: "#F4F0E0", accent: "#FD7970" },
+    cover: "/projects/beso-foods/cover.jpg",
+    clients: ["Beso Foods"],
+    liveUrl: "https://www.instagram.com/beso.admu/",
     summary:
-      "Designed the BESO brand identity and all social marketing content — campaigns drove 10,000+ engagements and 500+ new followers.",
+      "Co-owner and head of design for a food stall averaging \u20b180,000 monthly revenue \u2014 built the BESO brand identity from scratch, 3D-modelled the physical stall for construction, and ran the social campaigns that drove 10,000+ engagements.",
     context:
-      "Beso Foods is a food stall business I co-own and operate. I designed the brand identity — the BESO wordmark and lips logo mark — plus all of its social media marketing content, and modelled the physical stall in 3D for construction.",
+      "Beso \u2014 kiss in Spanish \u2014 started as a South American food stall at Ateneo de Manila's JSEC, built on the idea that a meal should feel like an experience rather than a transaction. I co-founded it and took the creative side end to end: the brand needed an identity that could carry that warmth across a physical stall, a menu, and an Instagram feed at once, and none of it existed yet. Everything on this page \u2014 the guidelines, the stall, the feed \u2014 came out of that gap.",
+    timeline: [
+      {
+        phase: "Brand identity & brand book",
+        period: "2024",
+        description:
+          "Logo system, palette, typography and a full 23\u201324 brand book codifying it.",
+      },
+      {
+        phase: "Stall design & construction",
+        period: "2024",
+        description:
+          "3D-modelled the ~8.7 ft \u00d7 8.7 ft stall, led interior design, oversaw build logistics.",
+      },
+      {
+        phase: "Launch & operations",
+        period: "2024 \u2013 Present",
+        description:
+          "Daily operations, inventory, and ongoing social campaigns with consistent MoM revenue growth.",
+      },
+    ],
     outputs: [
-      "BESO brand identity (wordmark + lips logo mark)",
-      "Ongoing social media marketing content",
-      "3D stall models for construction",
+      "BESO brand book \u2014 identity, logo system, palette, typography, tone and social guidelines",
+      "Logo suite: the layered \u201ckiss\u201d lips mark plus wordmark variations, in four palette treatments",
+      "Full 3D model and floor plan of the stall, used for construction",
+      "Interior design: service counter, kitchen line, cold storage and shelving layout",
+      "Social media posting guide and content aesthetic",
+      "Ongoing Instagram and Facebook campaigns",
     ],
     responsibilities: [
-      "Brand identity design",
-      "Marketing campaigns — 10,000+ social engagements, 500+ new followers",
-      "Store operations and construction logistics",
+      "Co-manage a food stall averaging \u20b180,000 monthly revenue with consistent month-over-month growth",
+      "Led all creative for the brand guideline and its design system",
+      "3D-modelled the stall and led its interior design",
+      "Oversaw construction logistics and daily store operations, including inventory",
+      "Grew the brand's following by 500+ new followers across 10,000+ social engagements",
     ],
-    skills: ["Brand identity", "Marketing design", "Social media", "3D modelling"],
+    skills: [
+      "Brand identity",
+      "Brand guidelines",
+      "Logo design",
+      "Typography",
+      "3D modelling",
+      "Interior & spatial design",
+      "Social media strategy",
+      "Art direction",
+      "Operations management",
+    ],
+    media: [
+      {
+        src: "/projects/beso-foods/brand-cover.jpg",
+        alt: "Cover of the BESO brand book: a coral field with the layered lips mark and the \u201cbeso.\u201d wordmark",
+        caption: "The brand book cover \u2014 the \u201ckiss\u201d mark that anchors the whole identity.",
+        group: "Brand guidelines",
+      },
+      {
+        src: "/projects/beso-foods/palette-logo.jpg",
+        alt: "BESO color palette swatches and the no-text lips logo shown on four background colors",
+        caption: "Four colors and one mark, specified to hold up on every surface.",
+        group: "Brand guidelines",
+      },
+      {
+        src: "/projects/beso-foods/logo-variations.jpg",
+        alt: "BESO wordmark in three letter cases plus logo lockups on cream, coral and charcoal backgrounds",
+        caption: "Wordmark and lockup variations for different placements.",
+        group: "Brand guidelines",
+      },
+      {
+        src: "/projects/beso-foods/typography.jpg",
+        alt: "BESO type stack \u2014 TAN-Nimbus, TAN-Harmoni, Playfair Display and Aileron \u2014 with a sample heading hierarchy",
+        caption: "The type system: \u201cTaste the passion, feel the love.\u201d",
+        group: "Brand guidelines",
+      },
+      {
+        src: "/projects/beso-foods/graphic-elements.jpg",
+        alt: "Six sample BESO graphic outputs reinterpreting the kiss mark as patterns, lockups and poster layouts",
+        caption: "Creative freedom inside the system \u2014 the mark reinterpreted post to post.",
+        group: "Brand guidelines",
+      },
+      {
+        src: "/projects/beso-foods/post-driven-by-love.jpg",
+        alt: "Beso post: two people running hand-in-hand across a green field in white, headline \u201cDriven by love, desiring more\u201d",
+        caption: "\u201cDriven by love, desiring more\u201d \u2014 106 likes, the account's best-performing post.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/post-beso-is-back.jpg",
+        alt: "Beso post: a woman looking over her shoulder in a field, the word BESO set large across the frame",
+        caption: "\u201cBeso is back\u201d \u2014 the relaunch post. 94 likes.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/post-sweet-as-a-dream.jpg",
+        alt: "Beso post: two hands clasped against greenery, headline \u201cSweet as a dream\u201d with a note on the cuddle hormone",
+        caption: "\u201cSweet as a dream\u201d \u2014 the definition-caption device the brand book calls for.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/post-indulged-in-pairs.jpg",
+        alt: "Beso post: a couple embracing seen from behind, headline \u201cMeant to be indulged in pairs\u201d",
+        caption: "\u201cMeant to be indulged in pairs\u201d \u2014 pairing the product promise to the brand's theme.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/post-next-up.jpg",
+        alt: "Beso post: a woman resting her face in her hands, headline \u201cNext up\u201d with \u201cComing soon\u201d",
+        caption: "\u201cNext up\u201d \u2014 a teaser built on the same type system.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/post-challengers-of-love.jpg",
+        alt: "Beso menu post: three dishes styled on white linen with labels for calamares sandwich, garlic parmesan and lemon pepper chicken",
+        caption: "\u201cChallengers of love\u201d \u2014 a menu launch, each dish annotated in brand type.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/post-gochujang-noodles.jpg",
+        alt: "Beso menu post: a bowl of gochujang noodles on wood with red petals, headline \u201cStarving for some snacks?\u201d",
+        caption: "\u201cStarving for some snacks?\u201d \u2014 menu item priced in-frame, kiss mark struck through the copy.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/ig-grid.jpg",
+        alt: "The @beso.admu Instagram profile page showing a twelve-post grid of campaign images",
+        caption: "The feed as one composition \u2014 warm tones, candid shots, bold type, post to post.",
+        group: "Social media posts",
+      },
+      {
+        src: "/projects/beso-foods/floor-plan.jpg",
+        alt: "Top-down floor plan of the Beso stall, 104.3 by 104.3 inches, with equipment positions marked",
+        caption: "Floor plan \u2014 every inch of an 8.7 ft square accounted for.",
+        group: "3D stall renders & construction",
+      },
+      {
+        src: "/projects/beso-foods/stall-exterior.jpg",
+        alt: "3D render of the Beso stall front showing the signage band, service counters and wall-mounted menu boards",
+        caption: "The stall front as modelled, with the signage band and service counters.",
+        group: "3D stall renders & construction",
+      },
+      {
+        src: "/projects/beso-foods/stall-interior-kitchen.jpg",
+        alt: "Interior 3D render looking down the Beso kitchen line: sink, fryers, induction hob and open shelving",
+        caption: "The kitchen line \u2014 sink, fryers and hob along one wall, shelving above.",
+        group: "3D stall renders & construction",
+      },
+      {
+        src: "/projects/beso-foods/stall-interior-service.jpg",
+        alt: "Interior 3D render of the Beso service side showing the food warmer, drinks chiller and prep counter",
+        caption: "The service side: warmer, chiller and prep counter within one pivot of each other.",
+        group: "3D stall renders & construction",
+      },
+    ],
   },
   {
     slug: "example-analysis",
