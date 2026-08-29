@@ -1,20 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* GSAP-adapted dark palette */
-  --color-canvas: #0e100f;
-  --color-surface: #191919;
-  --color-cream: #fffce1;
-  --color-muted: #7c7c6f;
-  --color-hairline: #42433d;
+  /* Light "paper" palette. canvas = page, ink = type. */
+  --color-canvas: #fbfaf8;
+  --color-surface: #f3f0e9;
+  --color-ink: #14110f;
+  --color-muted: #6b6a62;
+  --color-hairline: #e3dfd5;
 
-  /* Track accents: tech = green, design = pink */
-  --color-tech: #0ae448;
-  --color-tech-soft: #abff84;
-  --color-design: #fec5fb;
-  --color-accent-blue: #00bae2;
-  --color-accent-lilac: #9d95ff;
-  --color-accent-orange: #ff8709;
+  /* Track accents. The base tokens are text-safe on paper; the -soft
+     variants are the bright originals, used only as hover fills. */
+  --color-tech: #0a8f34;
+  --color-tech-soft: #0ae448;
+  --color-design: #b8368f;
+  --color-design-soft: #d94fb0;
+  --color-accent-blue: #0080a0;
+  --color-accent-lilac: #6b62d8;
+  --color-accent-orange: #c2620a;
 
   --font-sans: var(--font-inter-tight), "Inter Tight", "DM Sans", system-ui, sans-serif;
 
@@ -30,23 +32,23 @@
   --text-body-lg: 1.1875rem;
   --text-body-lg--line-height: 1.55;
 
-  --radius-card: 8px;
+  --radius-card: 10px;
 }
 
 body {
   background: var(--color-canvas);
-  color: var(--color-cream);
+  color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: var(--color-cream);
+  background: var(--color-ink);
   color: var(--color-canvas);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-cream);
+  outline: 2px solid var(--color-ink);
   outline-offset: 3px;
 }
 
@@ -87,6 +89,23 @@ body {
 .reveal.is-visible {
   opacity: 1;
   transform: none;
+}
+
+/* Outlined display type used for the name and the hub numerals.
+   The stroke colour must be set explicitly: `color` is transparent, so
+   `currentColor` would make the stroke invisible too. */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-ink);
+}
+
+.text-outline-tech {
+  -webkit-text-stroke-color: var(--color-tech);
+}
+
+.text-outline-design {
+  -webkit-text-stroke-color: var(--color-design);
 }
 
 @media (prefers-reduced-motion: reduce) {

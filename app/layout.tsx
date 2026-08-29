@@ -30,9 +30,7 @@ export default function RootLayout({
     <html lang="en" className={interTight.variable}>
       <body className="min-h-screen font-sans">
         <SiteHeader />
-        <main className="mx-auto max-w-[1280px] px-6 py-16 md:py-20">
-          {children}
-        </main>
+        <main>{children}</main>
         <footer className="border-t border-hairline">
           <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-4 px-6 py-10 text-sm text-muted">
             <p>© {new Date().getFullYear()} Luis Madrid</p>
@@ -45,7 +43,7 @@ export default function RootLayout({
               </Link>
               <a
                 href="https://github.com/luiscabba"
-                className="transition-colors hover:text-cream"
+                className="transition-colors hover:text-ink"
               >
                 GitHub
               </a>

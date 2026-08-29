@@ -18,7 +18,7 @@ export default function ProjectCard({
   return (
     <Link
       href={`/${project.slug}`}
-      className="group anim-rise relative block aspect-[4/3] overflow-hidden rounded-card border border-hairline transition-transform duration-300 hover:-translate-y-1.5 focus-visible:-translate-y-1.5"
+      className="group anim-rise relative block aspect-[4/3] overflow-hidden rounded-card border border-hairline transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_18px_40px_rgba(20,17,15,0.13)] focus-visible:-translate-y-1.5"
       style={{
         animationDelay: `${Math.min(index, 8) * 90}ms`,
         backgroundColor: brand.bg,

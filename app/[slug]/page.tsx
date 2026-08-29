@@ -67,12 +67,12 @@ export default async function ProjectPage({
   const skills = project.skills ?? project.tools;
 
   return (
-    <article>
+    <article className="mx-auto max-w-[1280px] px-6 py-14 md:py-16">
       {/* Sticky back navigation */}
       <div className="sticky top-4 z-10 anim-rise">
         <Link
           href={backHref}
-          className={`inline-flex items-center gap-2 rounded-full border border-hairline bg-canvas/80 px-4 py-1.5 text-sm backdrop-blur transition-colors duration-200 ${accentHover}`}
+          className={`inline-flex items-center gap-2 rounded-full border border-hairline bg-canvas/85 px-4 py-1.5 text-sm backdrop-blur transition-colors duration-200 ${accentHover}`}
         >
           <span aria-hidden>←</span> {backLabel}
         </Link>
@@ -110,7 +110,7 @@ export default async function ProjectPage({
             {project.repoUrl && (
               <a
                 href={project.repoUrl}
-                className="inline-flex items-center gap-2 rounded-full border border-hairline px-6 py-2.5 text-sm transition-colors duration-200 hover:border-cream"
+                className="inline-flex items-center gap-2 rounded-full border border-hairline px-6 py-2.5 text-sm transition-colors duration-200 hover:border-ink"
               >
                 View repository <span aria-hidden>↗</span>
               </a>
