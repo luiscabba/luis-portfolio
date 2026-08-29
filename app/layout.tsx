@@ -14,8 +14,8 @@ const interTight = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://luiscmadrid.vercel.app"),
   title: {
-    default: "Luis Madrid — Data Analytics & UI/UX Design",
-    template: "%s — Luis Madrid",
+    default: "Luis Madrid: Data Analytics & UI/UX Design",
+    template: "%s | Luis Madrid",
   },
   description:
     "Portfolio of Luis Madrid: data analytics, AI and UI/UX design work.",

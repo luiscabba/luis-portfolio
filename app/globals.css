@@ -77,7 +77,7 @@ body {
 .anim-d5 { animation-delay: 0.5s; }
 .anim-d6 { animation-delay: 0.6s; }
 
-/* Scroll-triggered reveal — toggled by components/Reveal.tsx */
+/* Scroll-triggered reveal, toggled by components/Reveal.tsx */
 .reveal {
   opacity: 0;
   transform: translateY(28px);

@@ -28,7 +28,7 @@ export type MediaItem = {
 };
 
 export type ProjectBrand = {
-  /** Card + header background — the project's own brand color, not the site's. */
+  /** Card + header background: the project's own brand color, not the site's. */
   bg: string;
   /** Text color on that background. */
   fg: string;
@@ -40,7 +40,7 @@ export type Project = {
   /** URL segment: /[slug]. Must be unique and must not collide with RESERVED_SLUGS. */
   slug: string;
   title: string;
-  /** One-sentence teaser — shown on the hub card and under the detail title. */
+  /** One-sentence teaser, shown on the hub card and under the detail title. */
   tagline: string;
   /** A project can live in one hub or both. */
   tracks: Track[];
@@ -246,7 +246,7 @@ export const projects: Project[] = [
     tools: ["Figma"],
     brand: { bg: "#0d2417", fg: "#d6ffe3", accent: "#abff84" },
     summary:
-      "Concept design for a sustainability-focused travel app — commissioned exploration work for Texxen.",
+      "Concept design for a sustainability-focused travel app, commissioned exploration work for Texxen.",
     clients: ["Texxen"],
     context:
       "Texxen commissioned KeptGreen as a concept: a travel app with sustainability at its core. The engagement produced the app's concept design; the project ultimately didn't move forward, but the exploration stands as a complete design exercise.",
@@ -258,7 +258,7 @@ export const projects: Project[] = [
     slug: "beso-foods",
     title: "Beso Foods",
     tagline:
-      "A South American food stall I co-own \u2014 brand book, 3D-modelled stall, and the social feed that fills it.",
+      "A South American food stall I co-own: brand book, 3D-modelled stall, and the social feed that fills it.",
     tracks: ["design"],
     year: "2024 \u2013 Present",
     role: "Co-owner, Head of Marketing & Design",
@@ -268,14 +268,14 @@ export const projects: Project[] = [
     clients: ["Beso Foods"],
     liveUrl: "https://www.instagram.com/beso.admu/",
     summary:
-      "Co-owner and head of design for a food stall averaging \u20b180,000 monthly revenue \u2014 built the BESO brand identity from scratch, 3D-modelled the physical stall for construction, and ran the social campaigns that drove 10,000+ engagements.",
+      "Co-owner and head of design for a food stall averaging \u20b180,000 monthly revenue. Built the BESO brand identity from scratch, 3D-modelled the physical stall for construction, and ran the social campaigns that drove 10,000+ engagements.",
     context:
-      "Beso \u2014 kiss in Spanish \u2014 started as a South American food stall at Ateneo de Manila's JSEC, built on the idea that a meal should feel like an experience rather than a transaction. I co-founded it and took the creative side end to end: the brand needed an identity that could carry that warmth across a physical stall, a menu, and an Instagram feed at once, and none of it existed yet. Everything on this page \u2014 the guidelines, the stall, the feed \u2014 came out of that gap.",
+      "Beso, kiss in Spanish, started as a South American food stall at Ateneo de Manila's JSEC, built on the idea that a meal should feel like an experience rather than a transaction. I co-founded it and took the creative side end to end: the brand needed an identity that could carry that warmth across a physical stall, a menu, and an Instagram feed at once, and none of it existed yet. Everything on this page (the guidelines, the stall, the feed) came out of that gap.",
     sections: [
       {
         heading: "Process",
         body:
-          "Nothing here shipped on a first pass. Every output started in a Figma \u201ccreative space\u201d as a wide spread of variants \u2014 twenty-odd logo lockups, four typography stacks, six versions of the same post with the headline set differently \u2014 and then narrowed. My co-owners and the operations side reviewed each spread with me, and whatever survived moved into numbered \u201cfinal drafts\u201d batches for a last round before publishing. Laying the options out side by side meant feedback landed on a wall of alternatives rather than a single proposal, so decisions got made by comparison \u2014 and the reasoning stayed on the canvas for the next output to build on.",
+          "Nothing here shipped on a first pass. Every output started in a Figma \u201ccreative space\u201d as a wide spread of variants (twenty-odd logo lockups, four typography stacks, six versions of the same post with the headline set differently) and then narrowed. My co-owners and the operations side reviewed each spread with me, and whatever survived moved into numbered \u201cfinal drafts\u201d batches for a last round before publishing. Laying the options out side by side meant feedback landed on a wall of alternatives rather than a single proposal, so decisions got made by comparison, and the reasoning stayed on the canvas for the next output to build on.",
       },
     ],
     timeline: [
@@ -299,11 +299,11 @@ export const projects: Project[] = [
       },
     ],
     outputs: [
-      "BESO brand book \u2014 identity, logo system, palette, typography, tone and social guidelines",
+      "BESO brand book: identity, logo system, palette, typography, tone and social guidelines",
       "Logo suite: the layered \u201ckiss\u201d lips mark plus wordmark variations, in four palette treatments",
       "Full 3D model and floor plan of the stall, used for construction",
       "Interior design: service counter, kitchen line, cold storage and shelving layout",
-      "Menu design \u2014 the printed stall menu and a photographed dish menu",
+      "Menu design: the printed stall menu and a photographed dish menu",
       "Packaging and wrapper artwork built from the brand\u2019s type system",
       "Food photography and art direction for the menu and campaign posts",
       "Social media posting guide and content aesthetic",
@@ -313,7 +313,7 @@ export const projects: Project[] = [
       "Co-manage a food stall averaging \u20b180,000 monthly revenue with consistent month-over-month growth",
       "Led all creative for the brand guideline and its design system",
       "Shot and art-directed the food photography behind the menu and campaign posts",
-      "Ran the review loop with co-owners and operations \u2014 variants explored in Figma, narrowed together, finalised in batches",
+      "Ran the review loop with co-owners and operations. Variants explored in Figma, narrowed together, finalised in batches",
       "3D-modelled the stall and led its interior design",
       "Oversaw construction logistics and daily store operations, including inventory",
       "Grew the brand's following by 500+ new followers across 10,000+ social engagements",
@@ -336,7 +336,7 @@ export const projects: Project[] = [
       {
         src: "/projects/beso-foods/brand-cover.jpg",
         alt: "Cover of the BESO brand book: a coral field with the layered lips mark and the \u201cbeso.\u201d wordmark",
-        caption: "The brand book cover \u2014 the \u201ckiss\u201d mark that anchors the whole identity.",
+        caption: "The brand book cover: the \u201ckiss\u201d mark that anchors the whole identity.",
         group: "Brand guidelines",
       },
       {
@@ -353,86 +353,86 @@ export const projects: Project[] = [
       },
       {
         src: "/projects/beso-foods/typography.jpg",
-        alt: "BESO type stack \u2014 TAN-Nimbus, TAN-Harmoni, Playfair Display and Aileron \u2014 with a sample heading hierarchy",
+        alt: "BESO type stack (TAN-Nimbus, TAN-Harmoni, Playfair Display and Aileron) with a sample heading hierarchy",
         caption: "The type system: \u201cTaste the passion, feel the love.\u201d",
         group: "Brand guidelines",
       },
       {
         src: "/projects/beso-foods/graphic-elements.jpg",
         alt: "Six sample BESO graphic outputs reinterpreting the kiss mark as patterns, lockups and poster layouts",
-        caption: "Creative freedom inside the system \u2014 the mark reinterpreted post to post.",
+        caption: "Creative freedom inside the system: the mark reinterpreted post to post.",
         group: "Brand guidelines",
       },
       {
         src: "/projects/beso-foods/menu-poster.jpg",
         alt: "The Beso stall menu poster: BESO Specials, Sandwiches, Main Dishes, and a Sides, Add-ons and Drinks panel, set in the brand\u2019s coral and cream",
-        caption: "The stall menu \u2014 the whole offer on one sheet, priced and sectioned in brand type.",
+        caption: "The stall menu: the whole offer on one sheet, priced and sectioned in brand type.",
         group: "Menus & packaging",
       },
       {
         src: "/projects/beso-foods/menu-food-photography.jpg",
         alt: "A dark-background Beso menu page with overhead shots of chicken tenders, thin slice steak and chili lemon garlic shrimp, each with a description and heat rating",
-        caption: "A photographed menu page \u2014 dishes shot overhead on dark stone, each with a heat rating.",
+        caption: "A photographed menu page: dishes shot overhead on dark stone, each with a heat rating.",
         group: "Menus & packaging",
       },
       {
         src: "/projects/beso-foods/wrapper-design.jpg",
         alt: "Beso wrapper artwork: a tiling typographic pattern of BESO, XOXO, \u201cwrapped in love\u201d and \u201cin pleasure we find guilt\u201d in coral, red and black",
-        caption: "Wrapper artwork \u2014 the brand\u2019s voice tiled into a repeating pattern for packaging.",
+        caption: "Wrapper artwork: the brand\u2019s voice tiled into a repeating pattern for packaging.",
         group: "Menus & packaging",
       },
       {
         src: "/projects/beso-foods/post-driven-by-love.jpg",
         alt: "Beso post: two people running hand-in-hand across a green field in white, headline \u201cDriven by love, desiring more\u201d",
-        caption: "\u201cDriven by love, desiring more\u201d \u2014 106 likes, the account's best-performing post.",
+        caption: "\u201cDriven by love, desiring more\u201d: 106 likes, the account's best-performing post.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/post-beso-is-back.jpg",
         alt: "Beso post: a woman looking over her shoulder in a field, the word BESO set large across the frame",
-        caption: "\u201cBeso is back\u201d \u2014 the relaunch post. 94 likes.",
+        caption: "\u201cBeso is back\u201d: the relaunch post. 94 likes.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/post-sweet-as-a-dream.jpg",
         alt: "Beso post: two hands clasped against greenery, headline \u201cSweet as a dream\u201d with a note on the cuddle hormone",
-        caption: "\u201cSweet as a dream\u201d \u2014 the definition-caption device the brand book calls for.",
+        caption: "\u201cSweet as a dream\u201d: the definition-caption device the brand book calls for.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/post-indulged-in-pairs.jpg",
         alt: "Beso post: a couple embracing seen from behind, headline \u201cMeant to be indulged in pairs\u201d",
-        caption: "\u201cMeant to be indulged in pairs\u201d \u2014 pairing the product promise to the brand's theme.",
+        caption: "\u201cMeant to be indulged in pairs\u201d: pairing the product promise to the brand's theme.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/post-next-up.jpg",
         alt: "Beso post: a woman resting her face in her hands, headline \u201cNext up\u201d with \u201cComing soon\u201d",
-        caption: "\u201cNext up\u201d \u2014 a teaser built on the same type system.",
+        caption: "\u201cNext up\u201d: a teaser built on the same type system.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/post-challengers-of-love.jpg",
         alt: "Beso menu post: three dishes styled on white linen with labels for calamares sandwich, garlic parmesan and lemon pepper chicken",
-        caption: "\u201cChallengers of love\u201d \u2014 a menu launch, each dish annotated in brand type.",
+        caption: "\u201cChallengers of love\u201d: a menu launch, each dish annotated in brand type.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/post-gochujang-noodles.jpg",
         alt: "Beso menu post: a bowl of gochujang noodles on wood with red petals, headline \u201cStarving for some snacks?\u201d",
-        caption: "\u201cStarving for some snacks?\u201d \u2014 menu item priced in-frame, kiss mark struck through the copy.",
+        caption: "\u201cStarving for some snacks?\u201d: menu item priced in-frame, kiss mark struck through the copy.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/ig-grid.jpg",
         alt: "The @beso.admu Instagram profile page showing a twelve-post grid of campaign images",
-        caption: "The feed as one composition \u2014 warm tones, candid shots, bold type, post to post.",
+        caption: "The feed as one composition: warm tones, candid shots, bold type, post to post.",
         group: "Social media posts",
       },
       {
         src: "/projects/beso-foods/floor-plan.jpg",
         alt: "Top-down floor plan of the Beso stall, 104.3 by 104.3 inches, with equipment positions marked",
-        caption: "Floor plan \u2014 every inch of an 8.7 ft square accounted for.",
+        caption: "Floor plan: every inch of an 8.7 ft square accounted for.",
         group: "3D stall renders & construction",
       },
       {
@@ -444,7 +444,7 @@ export const projects: Project[] = [
       {
         src: "/projects/beso-foods/stall-interior-kitchen.jpg",
         alt: "Interior 3D render looking down the Beso kitchen line: sink, fryers, induction hob and open shelving",
-        caption: "The kitchen line \u2014 sink, fryers and hob along one wall, shelving above.",
+        caption: "The kitchen line: sink, fryers and hob along one wall, shelving above.",
         group: "3D stall renders & construction",
       },
       {
@@ -456,31 +456,31 @@ export const projects: Project[] = [
       {
         src: "/projects/beso-foods/process-logo-explorations.jpg",
         alt: "Figma canvas titled Beso Logo Ideas, showing more than twenty lips-mark and wordmark lockups alongside typography specimen boards",
-        caption: "Logo and type exploration \u2014 the mark tested as a lockup across every palette combination before one was chosen.",
+        caption: "Logo and type exploration: the mark tested as a lockup across every palette combination before one was chosen.",
         group: "Process & iteration",
       },
       {
         src: "/projects/beso-foods/process-brand-boards.jpg",
         alt: "Figma canvas showing seven competing brand-system boards, each pairing a logo treatment with the color palette, a typography stack and sample imagery",
-        caption: "Seven whole brand systems side by side \u2014 the review compared complete directions, not single elements.",
+        caption: "Seven whole brand systems side by side. The review compared complete directions, not single elements.",
         group: "Process & iteration",
       },
       {
         src: "/projects/beso-foods/process-creative-space.jpg",
         alt: "Figma canvas titled Creative Space, showing rows of campaign post variants with the same photograph and different headline treatments",
-        caption: "The creative space \u2014 one photograph, many headline treatments, kept until the review narrowed it.",
+        caption: "The creative space: one photograph, many headline treatments, kept until the review narrowed it.",
         group: "Process & iteration",
       },
       {
         src: "/projects/beso-foods/process-ig-batch-1.jpg",
         alt: "Figma frame labelled Beso IG Final Drafts Batch 1, showing shortlisted campaign posts arranged in columns",
-        caption: "Final drafts, batch 1 \u2014 the shortlist that came out of the first review round.",
+        caption: "Final drafts, batch 1: the shortlist that came out of the first review round.",
         group: "Process & iteration",
       },
       {
         src: "/projects/beso-foods/process-ig-batch-2.jpg",
         alt: "Figma frame labelled Beso IG Final Drafts Batch 2, showing a later shortlist of menu and campaign posts",
-        caption: "Batch 2 \u2014 menu launches and seasonal posts through the same loop.",
+        caption: "Batch 2: menu launches and seasonal posts through the same loop.",
         group: "Process & iteration",
       },
     ],
@@ -488,7 +488,7 @@ export const projects: Project[] = [
   {
     slug: "example-analysis",
     title: "Example Data Analysis",
-    tagline: "Placeholder tech project — replace with your first analytics case study.",
+    tagline: "Placeholder tech project. Replace with your first analytics case study.",
     tracks: ["tech"],
     year: "2026",
     role: "Data Analyst",
@@ -500,7 +500,7 @@ export const projects: Project[] = [
   },
 ];
 
-/** Route segments that already exist as real pages — a project may never use these. */
+/** Route segments that already exist as real pages. A project may never use these. */
 export const RESERVED_SLUGS = new Set([
   "tech-portfolio",
   "design-portfolio",

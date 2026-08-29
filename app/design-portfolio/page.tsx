@@ -11,7 +11,7 @@ export default function DesignPortfolio() {
     <HubShell
       track="design"
       title="UI/UX, Marketing & Design Projects"
-      blurb="Product interfaces, brand identities and marketing design — from first paid commission to a brand I run day to day."
+      blurb="Product interfaces, brand identities and marketing design, from first paid commission to a brand I run day to day."
       chips={["Figma", "Brand systems", "3D & marketing"]}
     />
   );

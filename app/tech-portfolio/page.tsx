@@ -11,7 +11,7 @@ export default function TechPortfolio() {
     <HubShell
       track="tech"
       title="Tech, AI & Data Projects"
-      blurb="Analyses, dashboards, models and AI workflows — each one built to answer a real question."
+      blurb="Analyses, dashboards, models and AI workflows, each one built to answer a real question."
       chips={["Python & SQL", "Modern BI tooling", "AI workflows"]}
     />
   );

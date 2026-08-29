@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="text-sm font-semibold uppercase tracking-widest text-muted">404</p>
       <h1 className="mt-4 text-heading font-semibold">Nothing here.</h1>
       <p className="mt-4 text-body-lg text-muted">
-        That page doesn&apos;t exist — try one of the portfolios instead.
+        That page doesn&apos;t exist. Try one of the portfolios instead.
       </p>
       <div className="mt-10 flex justify-center gap-3">
         <Link
