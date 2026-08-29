@@ -106,26 +106,73 @@ export const projects: Project[] = [
   {
     slug: "okpo",
     title: "OKPO",
-    tagline: "Early-stage concept for a Filipino creator & esports community platform.",
+    tagline:
+      "Concept designs for a Filipino creator community platform and the financing app built alongside it.",
     tracks: ["design"],
     year: "2024",
     role: "Product Designer",
     tools: ["Figma"],
-    brand: { bg: "#0a1f2e", fg: "#cdeeff", accent: "#00bae2" },
+    brand: { bg: "#221F20", fg: "#F5F0E6", accent: "#F8D557" },
+    cover: "/projects/okpo/app-mockup.jpg",
     summary:
-      "Helped shape the business model and designed the initial desktop and mobile interfaces for a creator/esports community platform.",
+      "Commissioned concept work for OkPo, a community-builder SaaS startup: brand system, creator community website, and a companion loan app for its members.",
+    clients: ["OkPo"],
     context:
-      "OKPO set out to build a home for Filipino creators and esports communities. I joined at the concept stage, contributing to the business-model thinking and translating it into the platform's first desktop and mobile interface designs.",
+      "OkPo set out to build a home for Filipino creators and esports communities, with a financing arm that let members borrow against what they were building. I was commissioned at the concept stage, contributing to the business-model thinking and turning it into a working visual language: a logo and design system, a full community website layout, and the mobile app that carried the same brand into loan applications, transactions, and member chat.",
     outputs: [
-      "Initial desktop interface designs",
-      "Initial mobile interface designs",
+      "Logo lockups and a simple design system (color, type scale, buttons)",
+      "V2 community website design, desktop and component breakdown",
+      "Mobile app concept screens: onboarding, loan dashboard, loan application, transactions, chat",
       "Business-model concept contributions",
     ],
     responsibilities: [
-      "Shaped early product and business-model ideas",
-      "Designed the first desktop and mobile UI concepts",
+      "Shaped early product and business-model ideas with the founders",
+      "Built the brand and design system from scratch",
+      "Designed the community website and every mobile app screen",
     ],
-    skills: ["Product thinking", "UI design", "Mobile design", "Community platforms"],
+    skills: [
+      "Product thinking",
+      "Brand identity",
+      "Design systems",
+      "UI design",
+      "Mobile design",
+      "Community platforms",
+    ],
+    media: [
+      {
+        src: "/projects/okpo/logo-variations.jpg",
+        alt: "Three OkPo logo lockups on white, brand yellow and black backgrounds.",
+        caption: "Logo variations across the three brand backgrounds.",
+        group: "Brand & design system",
+      },
+      {
+        src: "/projects/okpo/design-system.jpg",
+        alt: "OkPo design system sheet showing color palette, type scale and button states.",
+        caption:
+          "Design system: #F8D557 / #221F20 / #D4D0C5, a Jockey One and Poppins type scale, and primary and alternate button states.",
+        group: "Brand & design system",
+      },
+      {
+        src: "/projects/okpo/website-v2.jpg",
+        alt: "V2 OkPo community website design with its component breakdown alongside.",
+        caption:
+          "V2 website design: hero, creator spotlight, latest content grid and newsletter, with the component breakdown beside it.",
+        group: "Community platform",
+      },
+      {
+        src: "/projects/okpo/app-mockup.jpg",
+        alt: "Three phone screens showing the OkPo login, loan dashboard and member chat.",
+        caption: "Login, loan dashboard and member chat in the OkPo brand.",
+        group: "Mobile app concepts",
+      },
+      {
+        src: "/projects/okpo/app-concepts.jpg",
+        alt: "Full screen flow board of the OkPo mobile app concept designs.",
+        caption:
+          "Full screen flow: onboarding variants, dashboard, add loan, transactions and chat.",
+        group: "Mobile app concepts",
+      },
+    ],
   },
   {
     slug: "keptgreen",
