@@ -76,185 +76,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "daddydappy",
-    title: "DaddyDappy",
-    tagline:
-      "Branding, NFT characters, use-case UI and a shipped landing page for a Web3 community boardroom startup.",
-    tracks: ["design"],
-    year: "2022",
-    role: "Product & UI/UX Designer",
-    tools: ["Figma", "Wix", "Canva"],
-    brand: { bg: "#101711", fg: "#EAF3EC", accent: "#4FC46E" },
-    cover: "/projects/daddydappy/laptop-mockup.jpg",
-    summary:
-      "Product and UI/UX design for DaddyDappy, a crypto startup building Web3 boardrooms for token holders: brand direction, NFT character mockups, use-case UI, the whitepaper, and the live landing page.",
-    context:
-      "DaddyDappy set out to fix a gap the founders kept hitting in crypto communities: Discord, Telegram and Twitter are good at gathering a crowd but bad at proving who actually holds the token, so founders talk past bots and holders feel disconnected from the project. The answer was a token-gated \"boardroom\", part Reddit feed, part Discord channel list, with leaderboards, reward gifting and public listings that let communities compete for a top spot. I joined as the product and UI/UX designer, working across branding, the character work, the interface concepts and everything the project showed the public.",
-    timeline: [
-      {
-        phase: "Branding & ideation",
-        period: "Q1 2022",
-        description:
-          "Visual direction, the Daddy mascot, and shaping the boardroom concept with the founders.",
-      },
-      {
-        phase: "Feature & UI design",
-        period: "Q2 to Q3 2022",
-        description:
-          "Use-case UI for boardrooms, leaderboards, direct messaging and rewards.",
-      },
-      {
-        phase: "Launch collateral",
-        period: "Q3 to Q4 2022",
-        description:
-          "Whitepaper design and the public landing page shipped on Wix.",
-      },
-    ],
-    outputs: [
-      "Brand direction: logo, green and yellow palette, and the Daddy mascot",
-      "NFT character mockups for the Tribute Collection, 18 hand-drawn pop-culture Daddies",
-      "Use-case UI concepts for boardrooms, leaderboards, direct messaging, rewards and social integrations",
-      "Landing page and rankings screen designs",
-      "The public landing page, built and shipped on Wix",
-      "The DaddyDappy whitepaper, cover to roadmap",
-    ],
-    responsibilities: [
-      "Assisted in branding and product ideation with the founders",
-      "Ideated and mocked up the NFT characters",
-      "Designed the use-case UI that explained each boardroom feature",
-      "Solely responsible for building and shipping the landing page on Wix",
-      "Designed and produced the whitepaper",
-    ],
-    skills: [
-      "Product design",
-      "UI/UX design",
-      "Brand identity",
-      "Illustration & character design",
-      "Web3 UX",
-      "Wix",
-      "Whitepaper design",
-    ],
-    media: [
-      {
-        src: "/projects/daddydappy/laptop-mockup.jpg",
-        alt: "DaddyDappy landing page on a laptop, green hero with the yellow Daddy mascot and a speech bubble.",
-        caption:
-          "The shipped landing page: \"Open and ready-to-use community boardroom dapp.\"",
-        group: "Landing page",
-      },
-      {
-        src: "/projects/daddydappy/landing-mockups.jpg",
-        alt: "Two DaddyDappy web designs, the landing page and a project rankings table.",
-        caption:
-          "Landing page and the public rankings screen, where boardrooms compete on rewards, activity and members.",
-        group: "Landing page",
-      },
-      {
-        src: "/projects/daddydappy/usecase-ui.jpg",
-        alt: "Board of DaddyDappy interface concepts covering leaderboards, rewards, direct messaging and social sharing.",
-        caption:
-          "Use-case UI iterations: boardrooms, leaderboards, community rewards, holder-only direct messaging and social integration.",
-        group: "Use-case UI",
-      },
-      {
-        src: "/projects/daddydappy/whitepaper.jpg",
-        alt: "DaddyDappy whitepaper pages in green, including the roadmap spread and the Tribute NFT card.",
-        caption:
-          "Whitepaper pages: cover, contents, the 2022 to 2023 roadmap, and the 18-piece Tribute NFT collection.",
-        group: "Whitepaper",
-      },
-    ],
-  },
-  {
-    slug: "okpo",
-    title: "OKPO",
-    tagline:
-      "Concept designs for a Filipino creator community platform and the financing app built alongside it.",
-    tracks: ["design"],
-    year: "2024",
-    role: "Product Designer",
-    tools: ["Figma"],
-    brand: { bg: "#221F20", fg: "#F5F0E6", accent: "#F8D557" },
-    cover: "/projects/okpo/app-mockup.jpg",
-    summary:
-      "Commissioned concept work for OkPo, a community-builder SaaS startup: brand system, creator community website, and a companion loan app for its members.",
-    clients: ["OkPo"],
-    context:
-      "OkPo set out to build a home for Filipino creators and esports communities, with a financing arm that let members borrow against what they were building. I was commissioned at the concept stage, contributing to the business-model thinking and turning it into a working visual language: a logo and design system, a full community website layout, and the mobile app that carried the same brand into loan applications, transactions, and member chat.",
-    outputs: [
-      "Logo lockups and a simple design system (color, type scale, buttons)",
-      "V2 community website design, desktop and component breakdown",
-      "Mobile app concept screens: onboarding, loan dashboard, loan application, transactions, chat",
-      "Business-model concept contributions",
-    ],
-    responsibilities: [
-      "Shaped early product and business-model ideas with the founders",
-      "Built the brand and design system from scratch",
-      "Designed the community website and every mobile app screen",
-    ],
-    skills: [
-      "Product thinking",
-      "Brand identity",
-      "Design systems",
-      "UI design",
-      "Mobile design",
-      "Community platforms",
-    ],
-    media: [
-      {
-        src: "/projects/okpo/logo-variations.jpg",
-        alt: "Three OkPo logo lockups on white, brand yellow and black backgrounds.",
-        caption: "Logo variations across the three brand backgrounds.",
-        group: "Brand & design system",
-      },
-      {
-        src: "/projects/okpo/design-system.jpg",
-        alt: "OkPo design system sheet showing color palette, type scale and button states.",
-        caption:
-          "Design system: #F8D557 / #221F20 / #D4D0C5, a Jockey One and Poppins type scale, and primary and alternate button states.",
-        group: "Brand & design system",
-      },
-      {
-        src: "/projects/okpo/website-v2.jpg",
-        alt: "V2 OkPo community website design with its component breakdown alongside.",
-        caption:
-          "V2 website design: hero, creator spotlight, latest content grid and newsletter, with the component breakdown beside it.",
-        group: "Community platform",
-      },
-      {
-        src: "/projects/okpo/app-mockup.jpg",
-        alt: "Three phone screens showing the OkPo login, loan dashboard and member chat.",
-        caption: "Login, loan dashboard and member chat in the OkPo brand.",
-        group: "Mobile app concepts",
-      },
-      {
-        src: "/projects/okpo/app-concepts.jpg",
-        alt: "Full screen flow board of the OkPo mobile app concept designs.",
-        caption:
-          "Full screen flow: onboarding variants, dashboard, add loan, transactions and chat.",
-        group: "Mobile app concepts",
-      },
-    ],
-  },
-  {
-    slug: "keptgreen",
-    title: "KeptGreen",
-    tagline: "A conceptual sustainability travel app, commissioned by Texxen.",
-    tracks: ["design"],
-    year: "2024",
-    role: "UI/UX Designer",
-    tools: ["Figma"],
-    brand: { bg: "#0d2417", fg: "#d6ffe3", accent: "#abff84" },
-    summary:
-      "Concept design for a sustainability-focused travel app, commissioned exploration work for Texxen.",
-    clients: ["Texxen"],
-    context:
-      "Texxen commissioned KeptGreen as a concept: a travel app with sustainability at its core. The engagement produced the app's concept design; the project ultimately didn't move forward, but the exploration stands as a complete design exercise.",
-    outputs: ["App concept and UI design exploration"],
-    responsibilities: ["Concept development", "UI/UX design"],
-    skills: ["Concept design", "UI/UX", "Sustainability"],
-  },
-  {
     slug: "beso-foods",
     title: "Beso Foods",
     tagline:
@@ -484,6 +305,185 @@ export const projects: Project[] = [
         group: "Process & iteration",
       },
     ],
+  },
+  {
+    slug: "okpo",
+    title: "OKPO",
+    tagline:
+      "Concept designs for a Filipino creator community platform and the financing app built alongside it.",
+    tracks: ["design"],
+    year: "2024",
+    role: "Product Designer",
+    tools: ["Figma"],
+    brand: { bg: "#221F20", fg: "#F5F0E6", accent: "#F8D557" },
+    cover: "/projects/okpo/app-mockup.jpg",
+    summary:
+      "Commissioned concept work for OkPo, a community-builder SaaS startup: brand system, creator community website, and a companion loan app for its members.",
+    clients: ["OkPo"],
+    context:
+      "OkPo set out to build a home for Filipino creators and esports communities, with a financing arm that let members borrow against what they were building. I was commissioned at the concept stage, contributing to the business-model thinking and turning it into a working visual language: a logo and design system, a full community website layout, and the mobile app that carried the same brand into loan applications, transactions, and member chat.",
+    outputs: [
+      "Logo lockups and a simple design system (color, type scale, buttons)",
+      "V2 community website design, desktop and component breakdown",
+      "Mobile app concept screens: onboarding, loan dashboard, loan application, transactions, chat",
+      "Business-model concept contributions",
+    ],
+    responsibilities: [
+      "Shaped early product and business-model ideas with the founders",
+      "Built the brand and design system from scratch",
+      "Designed the community website and every mobile app screen",
+    ],
+    skills: [
+      "Product thinking",
+      "Brand identity",
+      "Design systems",
+      "UI design",
+      "Mobile design",
+      "Community platforms",
+    ],
+    media: [
+      {
+        src: "/projects/okpo/logo-variations.jpg",
+        alt: "Three OkPo logo lockups on white, brand yellow and black backgrounds.",
+        caption: "Logo variations across the three brand backgrounds.",
+        group: "Brand & design system",
+      },
+      {
+        src: "/projects/okpo/design-system.jpg",
+        alt: "OkPo design system sheet showing color palette, type scale and button states.",
+        caption:
+          "Design system: #F8D557 / #221F20 / #D4D0C5, a Jockey One and Poppins type scale, and primary and alternate button states.",
+        group: "Brand & design system",
+      },
+      {
+        src: "/projects/okpo/website-v2.jpg",
+        alt: "V2 OkPo community website design with its component breakdown alongside.",
+        caption:
+          "V2 website design: hero, creator spotlight, latest content grid and newsletter, with the component breakdown beside it.",
+        group: "Community platform",
+      },
+      {
+        src: "/projects/okpo/app-mockup.jpg",
+        alt: "Three phone screens showing the OkPo login, loan dashboard and member chat.",
+        caption: "Login, loan dashboard and member chat in the OkPo brand.",
+        group: "Mobile app concepts",
+      },
+      {
+        src: "/projects/okpo/app-concepts.jpg",
+        alt: "Full screen flow board of the OkPo mobile app concept designs.",
+        caption:
+          "Full screen flow: onboarding variants, dashboard, add loan, transactions and chat.",
+        group: "Mobile app concepts",
+      },
+    ],
+  },
+  {
+    slug: "daddydappy",
+    title: "DaddyDappy",
+    tagline:
+      "Branding, NFT characters, use-case UI and a shipped landing page for a Web3 community boardroom startup.",
+    tracks: ["design"],
+    year: "2022",
+    role: "Product & UI/UX Designer",
+    tools: ["Figma", "Wix", "Canva"],
+    brand: { bg: "#101711", fg: "#EAF3EC", accent: "#4FC46E" },
+    cover: "/projects/daddydappy/laptop-mockup.jpg",
+    summary:
+      "Product and UI/UX design for DaddyDappy, a crypto startup building Web3 boardrooms for token holders: brand direction, NFT character mockups, use-case UI, the whitepaper, and the live landing page.",
+    context:
+      "DaddyDappy set out to fix a gap the founders kept hitting in crypto communities: Discord, Telegram and Twitter are good at gathering a crowd but bad at proving who actually holds the token, so founders talk past bots and holders feel disconnected from the project. The answer was a token-gated \"boardroom\", part Reddit feed, part Discord channel list, with leaderboards, reward gifting and public listings that let communities compete for a top spot. I joined as the product and UI/UX designer, working across branding, the character work, the interface concepts and everything the project showed the public.",
+    timeline: [
+      {
+        phase: "Branding & ideation",
+        period: "Q1 2022",
+        description:
+          "Visual direction, the Daddy mascot, and shaping the boardroom concept with the founders.",
+      },
+      {
+        phase: "Feature & UI design",
+        period: "Q2 to Q3 2022",
+        description:
+          "Use-case UI for boardrooms, leaderboards, direct messaging and rewards.",
+      },
+      {
+        phase: "Launch collateral",
+        period: "Q3 to Q4 2022",
+        description:
+          "Whitepaper design and the public landing page shipped on Wix.",
+      },
+    ],
+    outputs: [
+      "Brand direction: logo, green and yellow palette, and the Daddy mascot",
+      "NFT character mockups for the Tribute Collection, 18 hand-drawn pop-culture Daddies",
+      "Use-case UI concepts for boardrooms, leaderboards, direct messaging, rewards and social integrations",
+      "Landing page and rankings screen designs",
+      "The public landing page, built and shipped on Wix",
+      "The DaddyDappy whitepaper, cover to roadmap",
+    ],
+    responsibilities: [
+      "Assisted in branding and product ideation with the founders",
+      "Ideated and mocked up the NFT characters",
+      "Designed the use-case UI that explained each boardroom feature",
+      "Solely responsible for building and shipping the landing page on Wix",
+      "Designed and produced the whitepaper",
+    ],
+    skills: [
+      "Product design",
+      "UI/UX design",
+      "Brand identity",
+      "Illustration & character design",
+      "Web3 UX",
+      "Wix",
+      "Whitepaper design",
+    ],
+    media: [
+      {
+        src: "/projects/daddydappy/laptop-mockup.jpg",
+        alt: "DaddyDappy landing page on a laptop, green hero with the yellow Daddy mascot and a speech bubble.",
+        caption:
+          "The shipped landing page: \"Open and ready-to-use community boardroom dapp.\"",
+        group: "Landing page",
+      },
+      {
+        src: "/projects/daddydappy/landing-mockups.jpg",
+        alt: "Two DaddyDappy web designs, the landing page and a project rankings table.",
+        caption:
+          "Landing page and the public rankings screen, where boardrooms compete on rewards, activity and members.",
+        group: "Landing page",
+      },
+      {
+        src: "/projects/daddydappy/usecase-ui.jpg",
+        alt: "Board of DaddyDappy interface concepts covering leaderboards, rewards, direct messaging and social sharing.",
+        caption:
+          "Use-case UI iterations: boardrooms, leaderboards, community rewards, holder-only direct messaging and social integration.",
+        group: "Use-case UI",
+      },
+      {
+        src: "/projects/daddydappy/whitepaper.jpg",
+        alt: "DaddyDappy whitepaper pages in green, including the roadmap spread and the Tribute NFT card.",
+        caption:
+          "Whitepaper pages: cover, contents, the 2022 to 2023 roadmap, and the 18-piece Tribute NFT collection.",
+        group: "Whitepaper",
+      },
+    ],
+  },
+  {
+    slug: "keptgreen",
+    title: "KeptGreen",
+    tagline: "A conceptual sustainability travel app, commissioned by Texxen.",
+    tracks: ["design"],
+    year: "2024",
+    role: "UI/UX Designer",
+    tools: ["Figma"],
+    brand: { bg: "#0d2417", fg: "#d6ffe3", accent: "#abff84" },
+    summary:
+      "Concept design for a sustainability-focused travel app, commissioned exploration work for Texxen.",
+    clients: ["Texxen"],
+    context:
+      "Texxen commissioned KeptGreen as a concept: a travel app with sustainability at its core. The engagement produced the app's concept design; the project ultimately didn't move forward, but the exploration stands as a complete design exercise.",
+    outputs: ["App concept and UI design exploration"],
+    responsibilities: ["Concept development", "UI/UX design"],
+    skills: ["Concept design", "UI/UX", "Sustainability"],
   },
   {
     slug: "example-analysis",
